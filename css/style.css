@@ -216,8 +216,7 @@ header button:hover {
     z-index: 100;
     flex-direction: column;
     width: 70%;
-    background-color: hsl(var(--clr-white) / 0.04);
-    backdrop-filter: blur(12px);
+    background-color: hsl(var(--clr-dark) / 0.7);
     height: 100%;
     display: flex;
     list-style: none;
@@ -226,6 +225,12 @@ header button:hover {
     padding-left: 10%;
     gap: 2rem;
     transition: 0.8s transform;
+  }
+  @supports (backdrop-filter: blur(20px)) {
+    header ul {
+      background-color: hsl(var(--clr-white) / 0.04);
+      backdrop-filter: blur(12px);
+    }
   }
   header ul::before {
     content: "";
