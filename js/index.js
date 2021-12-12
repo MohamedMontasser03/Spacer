@@ -93,7 +93,7 @@ const APP = (function () {
 
           domName.innerHTML = data["crew"][i].name;
           domrole.innerHTML = data["crew"][i].role;
-          domImage.srcset = data["crew"][i].images.webp;
+          domWebp.srcset = data["crew"][i].images.webp;
           domImage.src = data["crew"][i].images.png;
           domBIO.innerHTML = data["crew"][i].bio;
         }
