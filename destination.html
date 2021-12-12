@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Select From Various Different Destenations Moon, Mars, Titan and Europa">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacer - Destination</title>
+    <link rel="shortcut icon" href="assets/shared/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="destination">
+    <header>
+        <div><img src="assets/shared/logo.svg" alt="logo" class="logo"></div>
+        <nav>
+            <ul content-hidden="true" class="underline-indicator">
+                <li><a href="index.html">home</a></li>
+                <li class="active"><a href="#">destination</a></li>
+                <li><a href="crew.html">crew</a></li>
+                <li><a href="technology.html">technology</a></li>
+            </ul>
+            <button class="menu"></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1 class="uppercase ff-sans-cond fc-white fs-3 letter-spacing-1 numed-title"><span>01</span>pick your
+                destination</h1>
+            <div class="planet-img">
+                <picture>
+                    <source srcset="assets/destination/image-moon.webp" type="image/webp">
+                    <img src="assets/destination/image-moon.png" alt="moon">
+                </picture>
+            </div>
+        </section>
+        <section>
+            <div class="planet-list underline-indicator">
+                <button aria-selected="true" class="uppercase letter-spacing-2 fs-3 ff-sans-cond fc-light"
+                    style="background-color: transparent;">moon</button>
+                <button aria-selected="false" class="uppercase letter-spacing-2 fs-3 ff-sans-cond fc-light"
+                    style="background-color: transparent;">mars</button>
+                <button aria-selected="false" class="uppercase letter-spacing-2 fs-3 ff-sans-cond fc-light"
+                    style="background-color: transparent;">europa</button>
+                <button aria-selected="false" class="uppercase letter-spacing-2 fs-3 ff-sans-cond fc-light"
+                    style="background-color: transparent;">titan</button>
+            </div>
+            <h2 class="fs-8 ff-serif fc-white uppercase ">Moon</h2>
+            <p class="desc fs-4 fc-light ff-sans">See our planet as you’ve never seen it before. A perfect relaxing
+                trip away to help regain
+                perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2
+                and
+                Apollo 11 landing sites.</p>
+            <hr>
+            <div class="info">
+                <p class="fs-3 fc-light ff-sans-cond letter-spacing-3 uppercase">AVG. Distance <span
+                        style="display: block;" class="fc-white ff-serif fs-7 letter-spacing-none">384,400 km</span>
+                </p>
+                <p class="fs-3 fc-light ff-sans-cond letter-spacing-3 uppercase">Est. travel time <span
+                        style="display: block;" class="fc-white ff-serif fs-7 letter-spacing-none">3 days</span></p>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

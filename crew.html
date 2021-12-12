@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Crew of your journey to outer space">
+    <meta name="robots" content="noindex, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacer - Crew</title>
+    <link rel="shortcut icon" href="assets/shared/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="crew">
+    <header>
+        <div><img src="assets/shared/logo.svg" alt="logo" class="logo"></div>
+        <nav>
+            <ul content-hidden="true" class="underline-indicator">
+                <li><a href="index.html">home</a></li>
+                <li><a href="destination.html">destination</a></li>
+                <li class="active"><a href="#">crew</a></li>
+                <li><a href="technology.html">technology</a></li>
+            </ul>
+            <button class="menu"></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="uppercase ff-sans-cond fc-white fs-3 letter-spacing-1 numed-title"><span>02</span>Meet your crew
+        </h1>
+        <section class="info">
+            <h2 class="fs-7 ff-serif fc-white uppercase"><span>
+                    Commander</span><span>Douglas Hurley</span>
+            </h2>
+            <p class="crew-desc fs-4 fc-light ff-sans ">Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot
+                and former NASA astronaut. He launched into space for the third time as
+                commander of Crew Dragon Demo-2.</p>
+        </section>
+        <div class="dot-indicator">
+            <button aria-selected="true"><span class="sr-only">Commander</span></button>
+            <button aria-selected="false"><span class="sr-only">Mission Specialist</span></button>
+            <button aria-selected="false"><span class="sr-only">PILOT</span></button>
+            <button aria-selected="false"><span class="sr-only">FLIGHT ENGINEER</span></button>
+        </div>
+        <div class="member-img"><img src="assets/crew/image-douglas-hurley.png" alt="douglas's image"></div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
