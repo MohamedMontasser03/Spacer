@@ -13,7 +13,7 @@ const APP = (function () {
 
   function handleDest(data) {
     const planetList = document.getElementsByClassName("planet-list")[0];
-    const domName = document.getElementsByTagName("h3")[0];
+    const domName = document.getElementsByTagName("h2")[0];
     const domWebp = document.querySelector(".planet-img picture").children[0];
     const domImage = document.querySelector(".planet-img picture").children[1];
     const domDesc = document.getElementsByClassName("desc")[0];
@@ -75,8 +75,10 @@ const APP = (function () {
     const Selector = document.getElementsByClassName("dot-indicator")[0];
     const domName = document.getElementsByTagName("h2")[0].children[1];
     const domrole = document.getElementsByTagName("h2")[0].children[0];
+    const domWebp =
+      document.getElementsByClassName("member-img")[0].children[0].children[0];
     const domImage =
-      document.getElementsByClassName("member-img")[0].children[0];
+      document.getElementsByClassName("member-img")[0].children[0].children[1];
     const domBIO = document.getElementsByClassName("crew-desc")[0];
     let selected = 0;
 
@@ -91,6 +93,7 @@ const APP = (function () {
 
           domName.innerHTML = data["crew"][i].name;
           domrole.innerHTML = data["crew"][i].role;
+          domImage.srcset = data["crew"][i].images.webp;
           domImage.src = data["crew"][i].images.png;
           domBIO.innerHTML = data["crew"][i].bio;
         }
