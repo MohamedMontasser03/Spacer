@@ -22,12 +22,12 @@
     <link rel="canonical">
 </head>
 
-<body class="home">
+<body class="contact">
     <header>
         <div><img src="assets/shared/logo.svg" alt="logo" class="logo"></div>
         <nav>
             <ul content-hidden="true" class="underline-indicator">
-                <li class="active"><a class="aria-hidden-p" href="#">home</a></li>
+                <li class=""><a class="aria-hidden-p" href="index.html">home</a></li>
                 <li><a class="aria-hidden-p" href="destination.html">destination</a></li>
                 <li><a class="aria-hidden-p" href="crew.html">crew</a></li>
                 <li><a class="aria-hidden-p" href="technology.html">technology</a></li>
@@ -36,22 +36,21 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div>
-            <h1 class="fadin">
-                So, you want to travel to
-                <span>Space</span>
-            </h1>
-            <p class="fc-light fadin">
-                Let’s face it; if you want to go to space, you might as well
-                genuinely go
-                to
-                outer space and not hover kind of on the edge of it. Well sit back, and relax
-                because we’ll give you a truly out of this world experience!
-            </p>
-        </div>
-        <div><a href="contact.html" class="cta fadin">Explore</a></div>
+    <main>
+        <h1 class="uppercase ff-sans-cond fc-white fs-3 letter-spacing-1 numed-title fadin"><span>04</span>Contact Us
+        </h1>
+        <form method="post" action="">
+            <label for="name" class="ff-sans-cond fc-light fs-4 letter-spacing-3 fadin">Name</label>
+            <input type="text" id="name">
+            <label for="email" class="ff-sans-cond fc-light fs-4 letter-spacing-3 fadin">Email</label>
+            <input type="email" id="email">
+            <label for="message" class="ff-sans-cond fc-light fs-4 letter-spacing-3 fadin">Message</label>
+            <textarea name="message" id="message"></textarea>
+            <button type="submit" class="ff-serif uppercase letter-spacing-2">Send
+            </button>
+        </form>
     </main>
+    <div id="alert"></div>
     <script src="js/index.js"></script>
 </body>
 
